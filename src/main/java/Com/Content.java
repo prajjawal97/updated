@@ -30,8 +30,8 @@ public class Content {
                     emailList.add(cellIterator.next().getStringCellValue());
                 }
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            e.exception();
         }
         return emailList;
     }
