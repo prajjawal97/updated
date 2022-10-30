@@ -28,7 +28,7 @@ public class SubmitForm {
                 System.out.println("Test case " +(i + 1) +" = "+ emailList.get(i)+"  failed with error :" + e);
             }
             if (!testFailed) {
-                System.out.println("Test case " + (i + 1) +" = "+ emailList.get(i)+ "  executed successfully without error; ");
+                System.out.println("Test case " + (i + 1) +" = "+ emailList.get(i)+ "  executed successfully");
             }
         }
         driverUtility.shutdownDriver();
@@ -36,7 +36,8 @@ public class SubmitForm {
 
     @AfterMethod
     void tearDown() {
-        system.out.println("After Test method")
+        system.out.println("After Test method");
+        system.out.println("To check if After method is calling");
     }
 
 }
