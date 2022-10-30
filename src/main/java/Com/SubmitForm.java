@@ -28,7 +28,7 @@ public class SubmitForm {
                 System.out.println("Test case " +(i + 1) +" = "+ emailList.get(i)+"  failed with error :" + e);
             }
             if (!testFailed) {
-                System.out.println("Test case " + (i + 1) +" = "+ emailList.get(i)+ "  executed successfully; ");
+                System.out.println("Test case " + (i + 1) +" = "+ emailList.get(i)+ "  executed successfully without error; ");
             }
         }
         driverUtility.shutdownDriver();
@@ -36,6 +36,7 @@ public class SubmitForm {
 
     @AfterMethod
     void tearDown() {
+        system.out.println("After Test method")
     }
 
 }
